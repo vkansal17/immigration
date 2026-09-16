@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#123d4a" />
+    <meta
+      name="description"
+      content="A calm, privacy-first starting point for navigating US immigration information, pathways, forms, and deadlines."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23e6784d'/%3E%3Cpath d='M29 68h42M35 61V41l15-10 15 10v20M43 68V51h14v17' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Harbor — US immigration guide</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Harbor home">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>harbor<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a href="#updates">Updates</a>
+          <a href="#pathways">Pathways</a>
+          <a href="#tracker">My tracker</a>
+          <a href="#resources">Resources</a>
+        </nav>
+        <button class="button button-small button-outline" id="privacy-button" type="button">Privacy first</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">A steadier place to start</p>
+            <h1>Immigration information, <em>without the overwhelm.</em></h1>
+            <p class="hero-lede">Find official starting points, understand common pathways, and keep your next steps close — all in one private, local-first guide.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#pathways">Explore pathways <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="#tracker">Set a private reminder <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="privacy-note"><span aria-hidden="true">●</span> Your tracker stays in this browser. No account. No backend.</p>
+          </div>
+          <div class="hero-art" aria-label="Illustration of a lighthouse and harbor" role="img">
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+            <div class="water"></div>
+            <div class="lighthouse">
+              <div class="light-beam"></div>
+              <div class="lantern"><span></span></div>
+              <div class="tower"></div>
+              <div class="tower-base"></div>
+            </div>
+            <div class="boat"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="updates">
+        <div class="shell">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">From the source</p>
+              <h2>Keep an eye on what changes.</h2>
+            </div>
+            <p class="section-intro">We link directly to official government pages. Read the source itself before making decisions; Harbor does not publish breaking news or legal advice.</p>
+          </div>
+          <div class="card-grid updates-grid">
+            <article class="source-card featured-card">
+              <div class="card-icon icon-coral" aria-hidden="true">◒</div>
+              <div class="card-meta"><span>USCIS</span><span>Official source</span></div>
+              <h3>Newsroom & policy updates</h3>
+              <p>Announcements, policy alerts, filing guidance, and operational updates from U.S. Citizenship and Immigration Services.</p>
+              <div class="source-footer"><span>Source: uscis.gov</span><a href="https://www.uscis.gov/newsroom" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="source-card">
+              <div class="card-icon icon-blue" aria-hidden="true">◎</div>
+              <div class="card-meta"><span>Department of State</span><span>Official source</span></div>
+              <h3>Visa Bulletin</h3>
+              <p>Monthly immigrant visa availability and priority-date movement for family and employment categories.</p>
+              <div class="source-footer"><span>Source: travel.state.gov</span><a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="source-card">
+              <div class="card-icon icon-gold" aria-hidden="true">⌁</div>
+              <div class="card-meta"><span>Department of State</span><span>Official source</span></div>
+              <h3>Travel advisories & alerts</h3>
+              <p>Check consular information and country-specific updates before travel or consular processing.</p>
+              <div class="source-footer"><span>Source: travel.state.gov</span><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <p class="reviewed"><span aria-hidden="true">✓</span> Source links reviewed September 16, 2026 · This is a directory, not a live news feed.</p>
+        </div>
+      </section>
+
+      <section class="section" id="pathways">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Find your starting point</p>
+            <h2>Every journey has a different route.</h2>
+            <p class="section-intro">Choose the description that feels closest. This is an orientation tool — eligibility depends on your individual facts and the current law.</p>
+          </div>
+          <div class="pathway-controls" role="group" aria-label="Filter pathways">
+            <button class="filter-button active" data-filter="all" type="button">All pathways</button>
+            <button class="filter-button" data-filter="family" type="button">Family</button>
+            <button class="filter-button" data-filter="work" type="button">Work & talent</button>
+            <button class="filter-button" data-filter="humanitarian" type="button">Humanitarian</button>
+            <button class="filter-button" data-filter="other" type="button">Other routes</button>
+          </div>
+          <div class="pathway-grid" id="pathway-list">
+            <article class="pathway-card" data-category="family">
+              <span class="pathway-number">01</span><span class="pathway-tag">Family</span>
+              <h3>I have a qualifying family relationship.</h3>
+              <p>A U.S. citizen or lawful permanent resident may be able to petition for certain relatives.</p>
+              <a href="https://www.uscis.gov/family" target="_blank" rel="noreferrer">See family options <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="pathway-card" data-category="work">
+              <span class="pathway-number">02</span><span class="pathway-tag">Work & talent</span>
+              <h3>I have a job offer or specialized ability.</h3>
+              <p>Some temporary and permanent options are based on employment, skills, investment, or extraordinary ability.</p>
+              <a href="https://www.uscis.gov/working-in-the-united-states" target="_blank" rel="noreferrer">See work options <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="pathway-card" data-category="humanitarian">
+              <span class="pathway-number">03</span><span class="pathway-tag">Humanitarian</span>
+              <h3>I need safety or protection.</h3>
+              <p>Asylum, refugee, humanitarian parole, and other protections have specific requirements and time limits.</p>
+              <a href="https://www.uscis.gov/humanitarian" target="_blank" rel="noreferrer">See protections <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="pathway-card" data-category="other">
+              <span class="pathway-number">04</span><span class="pathway-tag">Other routes</span>
+              <h3>I am exploring a different route.</h3>
+              <p>Review student, exchange, diversity visa, special immigrant, and other categories from official sources.</p>
+              <a href="https://www.usa.gov/immigration-and-citizenship" target="_blank" rel="noreferrer">Explore USA.gov <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <div class="callout">
+            <span class="callout-icon" aria-hidden="true">i</span>
+            <p><strong>Important:</strong> This guide is educational and is not legal advice. Immigration outcomes depend on details this tool cannot evaluate. Consider speaking with a licensed attorney or DOJ-accredited representative.</p>
+            <a href="https://www.uscis.gov/avoid-scams/find-legal-services" target="_blank" rel="noreferrer">Find authorized help <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-deep" id="tracker">
+        <div class="shell tracker-layout">
+          <div class="tracker-intro">
+            <p class="eyebrow eyebrow-light">Your private workspace</p>
+            <h2>Keep the next step in sight.</h2>
+            <p>Track cases, documents, and deadlines on this device. Nothing is uploaded, shared, or stored on a server.</p>
+            <div class="tracker-actions">
+              <button class="button button-light" id="export-button" type="button">Export backup</button>
+              <label class="button button-ghost-light" for="import-input">Import backup<input id="import-input" type="file" accept="application/json" hidden /></label>
+            </div>
+            <p class="small-note">Backups are JSON files saved to your device. Protect them like any personal record.</p>
+          </div>
+          <div class="tracker-panel">
+            <div class="panel-heading"><div><span class="panel-kicker">Local only</span><h3>My cases & deadlines</h3></div><button class="button button-primary button-small" id="add-case-button" type="button">+ Add item</button></div>
+            <div id="tracker-list" class="tracker-list"></div>
+            <div id="tracker-empty" class="empty-state"><div class="empty-icon" aria-hidden="true">✦</div><h4>Your workspace is ready.</h4><p>Add a case or deadline to make a private checklist.</p><button class="text-button" id="empty-add-button" type="button">Add your first item <span aria-hidden="true">→</span></button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="resources">
+        <div class="shell">
+          <div class="section-heading split-heading">
+            <div><p class="eyebrow">Practical next steps</p><h2>Useful, official, and close at hand.</h2></div>
+            <p class="section-intro">Start with the source that matches your task. Fees, forms, and eligibility can change — always confirm on the linked government page.</p>
+          </div>
+          <div class="resource-list">
+            <a class="resource-row" href="https://www.uscis.gov/forms/all-forms" target="_blank" rel="noreferrer"><span class="resource-symbol">▤</span><span><strong>Forms library</strong><small>Find current USCIS forms, instructions, and edition dates.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+            <a class="resource-row" href="https://www.uscis.gov/filing-fees" target="_blank" rel="noreferrer"><span class="resource-symbol">$</span><span><strong>Fees & fee waivers</strong><small>Check filing fees, payment rules, and eligibility for a waiver.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+            <a class="resource-row" href="https://www.uscis.gov/tools/find-a-citizenship-preparation-class" target="_blank" rel="noreferrer"><span class="resource-symbol">◌</span><span><strong>Find local support</strong><small>Locate citizenship classes and community organizations.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+            <a class="resource-row" href="https://www.justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster" target="_blank" rel="noreferrer"><span class="resource-symbol">✓</span><span><strong>Authorized legal help</strong><small>Search the DOJ roster for recognized organizations and accredited representatives.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+            <a class="resource-row" href="https://www.uscis.gov/i-9-central" target="_blank" rel="noreferrer"><span class="resource-symbol">▣</span><span><strong>Employer I-9 Central</strong><small>Employer-facing guidance for employment eligibility verification.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+            <a class="resource-row" href="https://www.e-verify.gov/" target="_blank" rel="noreferrer"><span class="resource-symbol">⌁</span><span><strong>E-Verify</strong><small>Official employer enrollment and case information.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">H</span><span>harbor<span class="brand-dot">.</span></span></a><p>Made for clearer next steps. <span>Local-first by design.</span></p><div><a href="https://www.uscis.gov/" target="_blank" rel="noreferrer">USCIS</a><a href="https://www.usa.gov/" target="_blank" rel="noreferrer">USA.gov</a><a href="#top">Back to top ↑</a></div></div></footer>
+
+    <dialog id="case-dialog" class="case-dialog">
+      <form method="dialog" id="case-form">
+        <div class="dialog-heading"><div><p class="eyebrow">Private workspace</p><h2>Add a tracker item</h2></div><button class="close-button" value="cancel" aria-label="Close dialog">×</button></div>
+        <label for="case-title">Name <span class="required">*</span></label><input id="case-title" name="title" required maxlength="80" placeholder="e.g. Form I-130" />
+        <label for="case-kind">Type</label><select id="case-kind" name="kind"><option value="case">Case</option><option value="deadline">Deadline</option><option value="document">Document</option></select>
+        <label for="case-date">Date <span class="optional">(optional)</span></label><input id="case-date" name="date" type="date" />
+        <label for="case-notes">Notes <span class="optional">(optional)</span></label><textarea id="case-notes" name="notes" rows="3" maxlength="240" placeholder="Receipt number, question for your representative…"></textarea>
+        <div class="dialog-actions"><button class="button button-outline" value="cancel" type="button" id="cancel-case-button">Cancel</button><button class="button button-primary" value="default" type="submit">Save item</button></div>
+      </form>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

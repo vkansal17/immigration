@@ -1,0 +1,10 @@
+{
+  "name": "Harbor — US immigration guide",
+  "short_name": "Harbor",
+  "description": "A private, local-first starting point for US immigration information and next steps.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#123d4a",
+  "icons": []
+}
